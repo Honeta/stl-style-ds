@@ -148,7 +148,7 @@ namespace honeta {
         cur->it_ = nullptr;
         Node *rchild = cur -> rchild_;
         delete cur;
-        if(!rchild) return nullptr;
+        if (!rchild) return nullptr;
         return rchild;
       }
       if (cur->lchild_->color_ == BLACK && cur->lchild_->lchild_ && cur->lchild_->lchild_->color_ == BLACK)
