@@ -1,2 +1,2 @@
 # stl-style-ds
-STL-style Left Leaning Red Black Tree and Fiboheap.
+STL-style Left Leaning Red Black Tree and Fibonacci Heap.
