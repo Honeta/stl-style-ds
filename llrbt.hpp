@@ -146,9 +146,10 @@ namespace honeta {
       if (!(cur->lchild_)) {
         delete cur->it_;
         cur->it_ = nullptr;
+        Node *rchild = cur -> rchild_;
         delete cur;
-        if(!(cur->rchild_)) return nullptr;
-        return cur->rchild_;
+        if(!rchild) return nullptr;
+        return rchild;
       }
       if (cur->lchild_->color_ == BLACK && cur->lchild_->lchild_ && cur->lchild_->lchild_->color_ == BLACK)
         cur = MoveRedLeft(cur);      
